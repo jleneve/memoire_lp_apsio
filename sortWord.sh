@@ -27,7 +27,8 @@ do
 	done
 done
 
+rm $file
 for (( i=0 ; i<size ; i++ ))
 do
-    echo ${tab[i]}
+	echo ${tab[i]} >> $file
 done
