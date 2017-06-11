@@ -3,6 +3,8 @@
 file=$1
 [ ! -r "$file" ] && exit 1
 
+./clearFile.sh $file
+
 # size of file
 size=$(wc -l < "$file")
 echo $size
