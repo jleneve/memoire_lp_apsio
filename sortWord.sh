@@ -5,3 +5,4 @@ file=$1
 
 sort $file > "tmp_file"
 cat "tmp_file" > $file
+rm "tmp_file"
