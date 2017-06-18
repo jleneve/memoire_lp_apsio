@@ -46,12 +46,13 @@ while [ "$VAR" == "" ]; do
 		else
 			awk 'NR >= '$num_line' && NR <= '$size $file > 'tmp_file_dic_2'
 		fi
-		echo $num_line
+
 		cat 'tmp_file_dic_2' > 'tmp_file_dic'
 		rm 'tmp_file_dic_2'
 	fi
 done
-
+rm 'tmp_file_dic'
+rm 'tmp_file'
 echo $VAR
 
 
